@@ -41,9 +41,21 @@ const removeChr = function(possition, word){
         }
         
     } */
-    console.log(word.substring(0,possition))
+    /* console.log(word.substring(0,possition)) */
+
+
+    /* let string = word
+    string = string.substr(possition, 1)
+    return string */
+    const newStr =  word.split("")
+    newStr.splice(possition, 1)
+    return newStr.join("")
+
 }
-removeChr(1, "ABC")
+console.log(removeChr(0, "ABC"))
+
+
+
 
 /* 4. Create a function to find and return the largest of three given integers. */
 writeHeader("Exercise 4")
@@ -82,18 +94,24 @@ console.log(largestInteger(4,3,3))
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
-    writeHeader("Exercise 5")
+    writeHeader("Exercise 6")
 
     const newString = function (word, number){
-        let x
+        let x = ""
         for (let i = 0; i < number; i++) {
-             x = word.concat(word)
+             x += word + ""
         }
         console.log(x)
     }
-    newString("ABC", 2)
+    newString("ABC", 3)
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
+    writeHeader("Exercise 7")
+
+    const displayName = function(){
+
+
+    }
 
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
