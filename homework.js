@@ -108,10 +108,11 @@ console.log(largestInteger(4,3,3))
     Pass the city name as a parameter. Return `false` if they start with a different string. */
     writeHeader("Exercise 7")
 
-    const displayName = function(){
+    const displayName = (str) => str.startsWith("Los") || str.startsWith("New")
 
+    console.log(displayName(" Angeles"))
+    console.log(displayName("New York"))
 
-    }
 
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
